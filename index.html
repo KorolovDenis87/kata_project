@@ -3,12 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Service center</title>
   </head>
   <body>
-    <main>qwertry</main>
-    <aside>
-      <li>qekr</li>
-    </aside>
+    <header class="header">
+      <div class="header__container-header">
+        <div class="header__up">
+          <button class="header__burger-button" type="button">
+            <svg
+              width="18"
+              height="16"
+              viewBox="0 0 18 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447716 2 0 1.55228 0 1ZM0 8C0 7.44772 0.447715 7 1 7H9C9.55228 7 10 7.44772 10 8C10 8.55229 9.55229 9 9 9H1C0.447715 9 0 8.55229 0 8ZM1 14C0.447715 14 0 14.4477 0 15C0 15.5523 0.447716 16 1 16H13C13.5523 16 14 15.5523 14 15C14 14.4477 13.5523 14 13 14H1Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <div class="header__logo">
+            <img
+              class="header__logo-images"
+              src="./img/header/Group.svg"
+              alt="CPS
+        Logo"
+              width="97"
+              height="51"
+            />
+          </div>
+          <span class="header__divider-right">
+            <img
+              src="./img/header/divider.svg"
+              alt=""
+              class="header__divider--right"
+            />
+          </span>
+          <div class="header__button-status">
+            <label
+              ><button
+                class="header__button-repair button-header"
+                type="button"
+              ></button
+            ></label>
+            <label
+              ><button
+                class="header__button-checkstatus button-header"
+                type="button"
+              ></button
+            ></label>
+          </div>
+        </div>
+        <span class="header__shadow">
+          <svg
+            min-width="320"
+            height="1"
+            viewBox="0 0 320 1"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="320" height="1" fill="#D9FFF5" />
+          </svg>
+        </span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container">
+        <div class="main__title">
+          <span class="main__highlight-main">
+            <svg
+              width="3"
+              height="40"
+              viewBox="0 0 3 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 1.5C3 0.671574 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5V38.5C0 39.3284 0.671573 40 1.5 40C2.32843 40 3 39.3284 3 38.5V1.5Z"
+                fill="#41F6D7"
+              />
+            </svg>
+          </span>
+          <h1>Услуги и сервисы</h1>
+        </div>
+        <div class="main__slide-menu">
+          <nav class="main__nav">
+            <ul class="main__nav-menu">
+              <li class="main__nav-item">
+                <a href="#" class="main__nav-link">Ремонтируемые бренды</a>
+              </li>
+              <li class="main__nav-item">
+                <a href="#" class="main__nav-link">Дополнительные услуги</a>
+              </li>
+              <li class="main__nav-item">
+                <a href="#" class="main__nav-link">Ремонтируемые устройства</a>
+              </li>
+              <li class="main__nav-item">
+                <a href="#" class="main__nav-link">Цены на услуги</a>
+              </li>
+              <li class="main__nav-item">
+                <a href="#" class="main__nav-link">Адреса сервисных центров</a>
+              </li>
+              <li class="main__nav-item">
+                <a href="#" class="main__nav-link">Специальные цены</a>
+              </li>
+              <li class="main__nav-item">
+                <a href="#" class="main__nav-link">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main__content">
+          <article class="main__content-text">
+            <p class="main__content-text main__content-text--size-s-320">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            
+          </article>
+          <div class="main__read">
+            <img
+              class="expand"
+              src="/img/main/ic expand.svg"
+              alt=""
+              width="7.41px"
+              height="10.29px"
+            />
+            <a class="main__read-more">Читать далее</a>
+          </div>
+        </div>
+        <div class="main__logo">
+          <img class="main__logo-group" src="./img/main/Picture Copy.png" alt="logo Group" />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
