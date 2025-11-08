@@ -22,10 +22,14 @@
 *::after {
   box-sizing: border-box;
 }
-
+h1 {
+  margin: 0;
+}
 body {
   display: block;
   min-width: 320px;
+  max-width: 1120px;
+  overflow-x: hidden;
   font-family: TT Lakes;
   font-weight: 400;
   font-size: 14px;
@@ -33,7 +37,12 @@ body {
   letter-spacing: 0.2px;
   margin: 0;
 }
-button {
+main {
+  background-color: var(--color-gray);
+}
+/* Стилизация кнопок */
+.button-burger,
+.button-menu {
   border-radius: 20px;
   background-color: #ff3e79;
   border: none;
@@ -41,32 +50,6 @@ button {
   height: 40px;
 }
 
-/* Хедэр */
-.header {
-  background-color: var(--color-white);
-}
-.header__container-header {
-  height: 88px;
-}
-.header__up {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 15px 15px 5px 15px;
-}
-
-.header__button-status {
-  display: flex;
-  gap: 20px;
-}
-.header__button-repair {
-  background-image: url("./img/header/repair.svg");
-  background-size: 40px 40px;
-}
-.header__button-checkstatus {
-  background-image: url("./img/header/checkstatus.svg");
-  background-size: 40px 40px;
-}
 :root {
   --color-white: #ffffff;
   --color-dark-gray: #7e7e82;
@@ -75,8 +58,67 @@ button {
   --border-radius: 6px;
   --border: 2px solid var(--color-blue);
   --input-height: 40px;
+  --container-width-sm: 320px;
+  --container-width-md: 768px;
+  --container-width-lg: 1120px;
 }
+.header {
+  background-color: var(--color-white);
+  min-height: 88px;
+}
+
+.header__menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 20px 20px 0px 20px;
+}
+.header__menu-logo {
+  display: flex;
+}
+.header__up-menu {
+  display: inline-flex;
+  align-items: center;
+}
+.menu-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.button-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.button-form__profile {
+  display: flex;
+  gap: 15px;
+}
+.button-form__status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.button-form__button-repair {
+  background-image: url("./img/header/repair.svg");
+  background-size: 40px 40px;
+}
+.button-form__button-checkstatus {
+  background-image: url("./img/header/checkstatus.svg");
+  background-size: 40px 40px;
+}
+.header__shadow {
+  display: flex;
+}
+.header__shadow-line {
+  display: inline-flex;
+}
+
 /* Мэйн */
+
 .main__container {
   background-color: var(--color-gray);
   min-width: 320px;
@@ -91,16 +133,29 @@ button {
   width: 304px;
   height: 40px;
 }
-
+.main__highlight-main {
+  padding-right: 15px;
+}
 /* Меню навигации */
-
+.main__container {
+  margin: 0 auto;
+}
+.main__nav {
+  overflow-x: auto;
+  white-space: nowrap;
+}
 .main__nav-menu {
   display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 .main__nav-item {
   display: inline-flex;
   border-radius: var(--border-radius);
 }
+/* .main__nav-item:first-child {
+  border: var(--border);
+} */
 .main__nav-link {
   display: flex;
   justify-content: center;
@@ -111,18 +166,13 @@ button {
   line-height: 24px;
   letter-spacing: -0.2px;
   text-decoration: none;
-  width: 220px;
   height: 40px;
   color: var(--color-dark-gray);
+  padding: 15px;
 }
-.main__nav-item:first-child {
-  border: var(--border);
-}
+
 .main__content {
-  width: 288px;
   height: 90px;
-  top: 240px;
-  left: 16px;
   padding-left: 20px;
 }
 
@@ -133,8 +183,7 @@ button {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-    height: 24px;
-  left: 16px;
+  height: 24px;
   padding-left: 16px;
 }
 
@@ -142,15 +191,205 @@ button {
   padding-left: 4px;
 }
 
-.main__content_text {
-  width: 288px;
-  height: 90px;
+.main__content-text {
+  /* width: 288px;
+  height: 90px; */
   font-family: TT Lakes;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
 }
-.main__logo-group {
-  margin-top: 60px;
+
+@media (min-width: 320px), (max-width: 320px) {
+  .button-form__profile {
+    display: none;
+  }
+  .menu-left__divider-left {
+    display: none;
+  }
+  .shadow-line__medium {
+    display: none;
+  }
+  .shadow-line__small {
+    margin: 0 0 -5px 0;
+  }
+  .main__nav-link--second {
+    border: var(--border);
+  }
+  .main__nav-link--first {
+    display: none;
+  }
+
+  .main__logo-group {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .main__content-text {
+    width: 288px;
+    height: 90px;
+  }
+
+  .content-size__medium-text {
+    display: none;
+  }
+  .content-size__max-text {
+    display: none;
+  }
+
+  .button-form__status--container-lg {
+    display: none;
+  }
+  .main__title-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .button-form__profile {
+    display: flex;
+  }
+  .menu-left__divider-left {
+    display: block;
+  }
+
+  .shadow-line__small {
+    display: none;
+  }
+  .shadow-line__medium {
+    display: block;
+    margin: 0 0 -5px 0;
+  }
+
+  .main__nav-link--first {
+    display: none;
+  }
+  .main__nav-link--fifth {
+    display: none;
+  }
+  .content-size__min-text {
+    display: none;
+  }
+  .content-size__medium-text {
+    display: block;
+  }
+  .main {
+    height: 416px;
+  }
+  .main__content {
+    float: left;
+  }
+  .main__content-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    height: 208px;
+  }
+  .main__content-text {
+    width: 312px;
+    height: 160px;
+  }
+  .main__logo {
+    width: 360px;
+    height: 208px;
+  }
+  .main__logo-group {
+    width: 360px;
+    height: 208px;
+    margin-top: 20px;
+  }
+
+  .button-form__status--container-lg {
+    display: none;
+  }
+  .main__title-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+
+  .header__shadow {
+    display: none;
+  }
+
+  .button-form__divider-right {
+    display: none;
+  }
+
+  .main__nav-link--first {
+    display: flex;
+    border: var(--border);
+  }
+  .main__nav-link--second {
+    border: none;
+  }
+  .main__nav-link--third {
+    display: none;
+  }
+  .main__nav-link--fifth {
+    display: flex;
+  }
+  .main__nav-menu {
+    flex-wrap: wrap;
+  }
+
+  .main__title {
+    justify-content: space-between;
+    width: 1120px;
+  }
+
+  .button-form__status--container-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .button-form__label-status {
+    display: inline-flex;
+  }
+  .button-form__label-repair {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .button-form__label-checkstatus {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 20px;
+  }
+  .main__content-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    height: 535px;
+    padding-left: 35px;
+  }
+  .main__content {
+    float: left;
+  }
+  .main__logo {
+    width: 530px;
+    height: 380px;
+  }
+  .main__logo-group {
+    width: 500px;
+    height: 307px;
+    padding-bottom: 40px;
+  }
+  .content-size__max-text {
+    display: block;
+  }
+  .content-size__medium-text {
+    display: none;
+  }
+  .content-size__min-text {
+    display: none;
+  }
 }
