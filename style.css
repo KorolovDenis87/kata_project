@@ -257,16 +257,17 @@ main {
 }
 
 .main__read-more{
-  display: inline-flex;
+  display: flex;
   font-family: TT Lakes;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
   border: none;
   background-color: var(--color-gray);
-   padding-top: 15px;
+  padding-top: 15px;
 }
-.main__read-more::before{
+.main__read-more::before {
   content: "";
     width: 24px;
     height: 24px;
@@ -274,6 +275,11 @@ main {
     background-position: center;
     background-image: url("./img/main/ic-expand.svg");
 }
+.main__read-more:active {
+  scale: 105%;
+  transition: 0.08s;
+}
+
 .main__content-text {
   font-family: TT Lakes;
   font-weight: 400;
