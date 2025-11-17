@@ -93,7 +93,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 15px;
-}
+  }
 .button-form__button-call{
   background-image: url("./img/header/call.svg");
   background-repeat: no-repeat;
@@ -107,7 +107,7 @@ main {
 .button-form__button-repair:hover,
 .button-form__button-checkstatus:hover {
   cursor: pointer;
-  opacity: var(--hover-button-color);
+  scale: 110%;
   transition: 0.3s;
 }
 
@@ -224,11 +224,10 @@ main {
 .main__nav-menu {
   display: flex;
   justify-content: flex-start;
- overflow-x: auto;
+  overflow-x: auto;
 }
 .main__nav-item {
   display: inline-flex;
-  border-radius: var(--border-radius);
 }
 
 
@@ -248,9 +247,10 @@ main {
 }
 .main__nav-link:hover {
   border: var(--border);
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: var(--border-radius);
-}
+  }
+
 .main__content {
   height: 90px;
   padding-left: 20px;
@@ -275,11 +275,11 @@ main {
     background-position: center;
     background-image: url("./img/main/ic-expand.svg");
 }
-.main__read-more:active {
-  scale: 105%;
-  transition: 0.08s;
-}
 
+.main__read-more:hover{
+  scale: 110%;
+  transition: 0.2s;
+}
 .main__content-text {
   font-family: TT Lakes;
   font-weight: 400;
@@ -415,6 +415,9 @@ main {
     width: 312px;
     height: 160px;
   }
+  .main__logo-group{
+    border-radius: 5px;
+  }
 }
 @media (min-width: 1120px) {
   body{
@@ -459,11 +462,15 @@ h1{
 
   .button-form__status--container-lg {
     display: flex;
-    
+   
   }
-  .button-form__label-status {
-    display: inline-flex;
+  .label-form__input{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
+  
   
 
   .button-form__label-repair {
