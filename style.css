@@ -98,18 +98,18 @@ a, a:link, a:visited {
   align-items: center;
   gap: 15px;
   }
-.button-form__button-call{
+.round-icon--call{
   background-image: url("./img/header/call.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .aside-menu__button-aside--close:hover,
 .menu-left__burger-button:hover,
-.button-form__button-call:hover, 
-.button-form__button-chat:hover, 
-.button-form__button-profile:hover,
-.button-form__button-repair:hover,
-.button-form__button-checkstatus:hover,
+.round-icon--call:hover, 
+.round-icon--chat:hover, 
+.round-icon--profile:hover,
+.round-icon--repair:hover,
+.round-icon--checkstatus:hover,
 .button-aside--call:hover,
 .button-aside--chat:hover,
 .button-aside--profile:hover,
@@ -197,13 +197,13 @@ background-repeat: no-repeat;
   background-position: center;
 }
 
-.button-form__button-chat{
+.round-icon--chat{
   background-image: url("./img/header/chat.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.button-form__button-profile{
+.round-icon--profile{
   background-image: url("./img/header/profile.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -220,12 +220,12 @@ background-repeat: no-repeat;
   gap: 15px;
 }
 
-.button-form__button-repair {
+.round-icon--repair {
   background-image: url("./img/header/repair.svg");
   background-size: 40px 40px;
 }
 
-.button-form__button-checkstatus {
+.round-icon--checkstatus {
   background-image: url("./img/header/checkstatus.svg");
   background-size: 40px 40px;
 }
@@ -512,7 +512,7 @@ transition-duration:  0.3s;
 }
 
 .main__read-more{
-  display: flex;
+  display: block;
   font-family: TT Lakes;
   font-weight: 500;
   font-size: 16px;
@@ -523,12 +523,14 @@ transition-duration:  0.3s;
   padding-top: 15px;
 }
 .main__read-more::before {
+  display: inline-flex;
   content: "";
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 5px 10px;
     background-image: url("./img/main/ic-expand.svg");
+    padding-top: px;
 }
 
 .main__read-more:hover{
@@ -774,7 +776,7 @@ h1{
   .content-size__min-text {
     display: none;
   }
-  .text-content{
+  .text-content {
     width: 490px;
     height: 160px;
     margin-top: 10px;
