@@ -8,17 +8,27 @@
   </head>
   <body>
     <header class="header">
+      
       <div class="header__container-header">
         <div class="header__menu-item">
           <div class="header__menu-logo">
             <!-- меню слева -->
             <div class="menu-left">
-              <button
+              <div class="aside-menu">
+
+              </div>
+              <div class="button--side-menu">
+                <button
                 class="menu-left__burger-button button-burger"
                 type="button"
-              >
-                <img src="./img/header/burger-icon.svg" alt="">
-              </button>
+                aria-controls="side">
+                <span></span>
+                <span></span>
+                <span></span>
+                 
+                  </button>           
+                
+              </div>
               <span class="menu-left__divider-left">
               </span>
               <a class="menu-left__logo" href="#">
@@ -74,6 +84,58 @@
     </header>
     <main class="main">
       <div class="main__container">
+        <div class="aside-menu">
+          <div class="aside-menu__header-aside">
+              <button id="button-close" class="aside-menu__button-aside--close button-menu" type="button">
+                <span></span>
+                <span></span>
+              </button>           
+              
+              <a class="menu-left__logo" href="#">
+                <img src="./img/header/Group.svg" alt="Logo">
+              </a>
+              <button class="aside-menu__button-aside--search button-menu" type="button">
+              </button>    
+            </div>
+          <nav class="aside-menu__nav-aside">
+            <span class="aside-highlight"></span>
+            <ul class="aside-menu__list-aside">
+              <li class="aside-menu__link-aside"><a href="#" class="aside-menu__item-aside aside-menu__item-aside--active">Ремонт техники</a></li>
+              <li class="aside-menu__link-aside"><a href="#" class="aside-menu__item-aside">Услуги и сервисы</a></li>
+              <li class="aside-menu__link-aside"><a href="#" class="aside-menu__item-aside">Корпоративным клиентам</a></li>
+              <li class="aside-menu__link-aside"><a href="#" class="aside-menu__item-aside">Продавцам техники</a></li>
+              <li class="aside-menu__link-aside"><a href="#" class="aside-menu__item-aside">Партнерам</a></li>
+              <li class="aside-menu__link-aside"><a href="#" class="aside-menu__item-aside">Производителям</a></li>
+              <li class="aside-menu__link-aside"><a href="#" class="aside-menu__item-aside">Наши сервисные центры</a></li>
+              <li class="aside-menu__link-aside"><a href="#" class="aside-menu__item-aside">Контакты</a></li>
+            </ul>
+            <div class="aside-menu__button-aside">
+              <button class="button-aside--call button-menu">
+
+              </button>
+              <button class="button-aside--chat button-menu">
+
+              </button>
+              <button class="button-aside--profile button-menu">
+
+              </button>
+
+            </div>
+            <div class="aside-menu__mail">
+              <a href="mailto:mail@cps.com">mail@cps.com</a>
+            </div>
+            <div class="aside-menu__phone">
+              <a href="tel:8 800 890 8900">8 800 890 8900</a>
+            </div>
+            <div class="aside-menu__lang">
+              <ul class="aside-menu__list-lang">
+                <li class="aside-menu__link-lang--ru">RU</li>
+                <li class="aside-menu__link-lang--en">EN</li>
+                <li class="aside-menu__link-lang--ch">CH</li>
+              </ul>
+            </div>
+          </nav>
+        </div>
         <div class="main__title title">
           <div class="main__title-main">
             <span class="main__highlight-main">
