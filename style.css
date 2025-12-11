@@ -103,17 +103,17 @@ a, a:link, a:visited {
   background-repeat: no-repeat;
   background-position: center;
 }
-.aside-menu__button-aside--close:hover,
+.aside-menu__round-icon--close:hover,
 .menu-left__burger-button:hover,
 .round-icon--call:hover, 
 .round-icon--chat:hover, 
 .round-icon--profile:hover,
 .round-icon--repair:hover,
 .round-icon--checkstatus:hover,
-.button-aside--call:hover,
-.button-aside--chat:hover,
-.button-aside--profile:hover,
-.aside-menu__button-aside--search:hover
+.round-icon--call:hover,
+.round-icon--chat:hover,
+.round-icon--profile:hover,
+.aside-menu__round-icon--search:hover
  {
   cursor: pointer;
   scale: 110%;
@@ -146,7 +146,7 @@ left: 12px;
 border-radius: 1px;
 transform: translateY(7px);
 }
-.button-aside--call {
+.round-icon--call {
 background-image: url("./img/header/call.svg");
 background-repeat: no-repeat;
 background-position: center;
@@ -159,7 +159,7 @@ background-position: center;
   padding-right: 20px;
   gap: 8px;
 }
-.aside-menu__button-aside--close span {
+.aside-menu__round-icon--close span {
   position: absolute;
 width: 22px;
 height: 2px;
@@ -170,7 +170,7 @@ transform: rotate(135deg);
 top: 19px;
 left: 9px;
 }
-.aside-menu__button-aside--close span:nth-child(2) {
+.aside-menu__round-icon--close span:nth-child(2) {
   position: absolute;
 width: 22px;
 height: 2px;
@@ -181,17 +181,17 @@ transform: rotate(-135deg);
 top: 19px;
 left: 9px;
 }
-.aside-menu__button-aside--search {
+.aside-menu__round-icon--search {
   background-image: url("./img/main/search\ \(2\).svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-.button-aside--chat {
+.round-icon--chat {
   background-image: url("./img/header/chat.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-.button-aside--profile {
+.round-icon--profile {
 background-image: url("./img/header/profile.svg");
 background-repeat: no-repeat;
   background-position: center;
@@ -372,7 +372,7 @@ top: -5px;
   width: 222px;
 height: 876px;
 }
-.aside-menu__button-aside {
+.aside-menu__round-icon {
   display: inline-flex;
   position: relative;
   left: 24px;
