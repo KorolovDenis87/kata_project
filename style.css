@@ -182,7 +182,7 @@ top: 19px;
 left: 9px;
 }
 .aside-menu__button-aside--search {
-  background-image: url(./img/main/search.svg);
+  background-image: url("./img/main/search\ \(2\).svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -307,7 +307,9 @@ background-repeat: no-repeat;
   background-color: var(--color-white);
   top: 0;
   left: 0;
+ /* display: none; */
 }
+
 
 .aside-menu__header-aside {
   position: relative;
@@ -405,6 +407,8 @@ font-size: 24px;
 line-height: 32px;
 letter-spacing: -0.6px;
 }
+
+
 /* стилизация кнопок языки */
 .aside-menu__lang {
   position: relative;
