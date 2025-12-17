@@ -9,75 +9,52 @@
   <body>
     <header class="header">
       
-      <div class="header__container-header">
-        <div class="header__menu-item">
-          <div class="header__menu-logo">
+      
             <!-- меню слева -->
-            <div class="menu-left">
-              <aside class="aside-menu">
-
-              </aside>
-              <div class="button-aside">
-                <button id="button-open"
-                class="menu-left__burger-button button-burger"
-                type="button"
-                >
-                <span class="burger-line1"></span>
-                <span class="burger-line2"></span>
-                <span class="burger-line3"></span>
-                 
-                  </button>           
-                
-              </div>
-              <span class="menu-left__divider-left">
-              </span>
-              <a class="menu-left__logo" href="#">
-                <img src="./img/header/Group.svg" alt="Logo">
-              </a>
-            </div>
-          </div>
-          <div class="header__up-menu">
+      <div class="header__menu-left">
+        <button class="round-icon round-icon--burger">
+          <span class="burger-line1"></span>
+          <span class="burger-line2"></span>
+          <span class="burger-line3"></span>
+        </button>           
+        <span class="menu-left__divider-left">
+        </span>
+        <a class="menu-left__logo" href="#">
+          <img src="./img/header/Group.svg" alt="Logo">
+        </a>
+      </div>
+          
+          
             <!-- Меню справа -->
-            <div class="menu-right">
-              <div class="button-form">
-                <!-- Меню справа профильные  -->
-                <div class="button-form__profile">
-                  <button
-                    class="round-icon round-icon--call button-menu"
-                    type="button">
-                  </button>
-                  <button
-                    class="round-icon round-icon--chat button-menu"
-                    type="button">
-                  </button>
-                  <button
-                    class="round-icon round-icon--profile button-menu"
-                    type="button">
-                  </button>
-                 </div>
-                <!-- Разделитель -->
-                <span class="button-form__divider-right">
-                </span>
-                <!-- Меню справа статус ремонта  -->
-                <div class="button-form__status">
-                  <button class="round-icon round-icon--repair button-menu" type="button">
-
-                  </button>
-                  <button
-                      class="round-icon round-icon--checkstatus button-menu"
-                      type="button">
-                  </button>
-                </div>
-              </div>
-            </div>
+      <div class="header__menu-right">
+        <div class="button-form">
+              <!-- Меню справа профильные  -->
+          <div class="button-form__profile">
+            <button
+              class="round-icon round-icon--call"
+              type="button">
+            </button>
+            <button
+              class="round-icon round-icon--chat"
+              type="button">
+            </button>
+            <button
+              class="round-icon round-icon--profile"
+              type="button">
+            </button>
           </div>
-        </div>
-        <div class="header__shadow">
-          <div class="header__shadow-line">
-            <span class="shadow-line__small">
-            </span>
-            <span class="shadow-line__medium">
-            </span>
+              <!-- Разделитель -->
+          <span class="button-form__divider-right">
+          </span>
+              <!-- Меню справа статус ремонта  -->
+          <div class="button-form__status">
+            <button class="round-icon round-icon--repair" type="button">
+
+            </button>
+            <button
+                class="round-icon round-icon--checkstatus"
+                type="button">
+            </button>
           </div>
         </div>
       </div>
@@ -85,8 +62,8 @@
     <main class="main">
       <div class="main__container">
         <aside class="aside-menu">
-          <header class="aside-menu__header-aside">
-            <button id="button-close" class="round-icon round-icon--close button-menu" type="button">
+          <header class="aside-menu__header">
+            <button id="button-close" class="round-icon round-icon--close" type="button">
               <span class="burger-line1"></span>
               <span class="burger-line2"></span>
             </button>           
@@ -94,30 +71,30 @@
             <a class="menu-left__logo" href="#">
               <img src="./img/header/Group.svg" alt="Logo">
             </a>
-            <button class="round-icon round-icon--search button-menu" type="button">
+            <button class="round-icon round-icon--search" type="button">
             </button>    
           </header>
-          <nav class="aside-menu__nav-aside">
-            <ul class="aside-menu__list-aside">
-              <li class="aside-menu__item-aside"><a href="#" class="aside-menu__link-aside">Ремонт техники</a></li>
-              <li class="aside-menu__item-aside"><a href="#" class="aside-menu__link-aside">Услуги и сервисы</a></li>
-              <li class="aside-menu__item-aside"><a href="#" class="aside-menu__link-aside">Корпоративным клиентам</a></li>
-              <li class="aside-menu__item-aside"><a href="#" class="aside-menu__link-aside">Продавцам техники</a></li>
-              <li class="aside-menu__item-aside"><a href="#" class="aside-menu__link-aside">Партнерам</a></li>
-              <li class="aside-menu__item-aside"><a href="#" class="aside-menu__link-aside">Производителям</a></li>
-              <li class="aside-menu__item-aside"><a href="#" class="aside-menu__link-aside">Наши сервисные центры</a></li>
-              <li class="aside-menu__item-aside"><a href="#" class="aside-menu__link-aside">Контакты</a></li>
+          <nav class="aside-menu__nav">
+            <ul class="aside-menu__list">
+              <li class="aside-menu__item"><a href="#" class="aside-menu__link">Ремонт техники</a></li>
+              <li class="aside-menu__item"><a href="#" class="aside-menu__link">Услуги и сервисы</a></li>
+              <li class="aside-menu__item"><a href="#" class="aside-menu__link">Корпоративным клиентам</a></li>
+              <li class="aside-menu__item"><a href="#" class="aside-menu__link">Продавцам техники</a></li>
+              <li class="aside-menu__item"><a href="#" class="aside-menu__link">Партнерам</a></li>
+              <li class="aside-menu__item"><a href="#" class="aside-menu__link">Производителям</a></li>
+              <li class="aside-menu__item"><a href="#" class="aside-menu__link">Наши сервисные центры</a></li>
+              <li class="aside-menu__item"><a href="#" class="aside-menu__link">Контакты</a></li>
             </ul>
           </nav>
-          <footer class="aside-menu__footer-aside">
-            <div class="aside-menu__round-aside">
-              <button class="round-icon round-icon--call button-menu">
+          <footer class="aside-menu__footer">
+            <div class="aside-menu__round">
+              <button class="round-icon round-icon--call">
 
               </button>
-              <button class="round-icon round-icon--chat button-menu">
+              <button class="round-icon round-icon--chat">
 
               </button>
-              <button class="round-icon round-icon--profile button-menu">
+              <button class="round-icon round-icon--profile">
 
               </button>
 
@@ -151,14 +128,14 @@
                 Оставить заявку
               
               <button
-                    class="round-icon round-icon--repair button-menu"
+                    class="round-icon round-icon--repair"
                     type="button">
               </button></label>
               <label class="label-form__input">
                 Статус ремонта
               
               <button
-                    class="round-icon round-icon--checkstatus button-menu"
+                    class="round-icon round-icon--checkstatus"
                     type="button">
               </button></label>
             </div>
