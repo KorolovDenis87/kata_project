@@ -12,40 +12,53 @@ closeButton.addEventListener("click", () => {
   }
 })
 
-const swiper = new Swiper('.swiper', {
-
-  direction: 'horizontal',
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
   loop: true,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
+})
 
- /*  scrollbar: {
-    el: '.swiper-scrollbar',
-  }, */
-});
+const toggleButton = document.querySelector(".brand__show-hide")
+const hiddenCards = document.querySelectorAll(".hidden-card")
 
-const button = document.querySelector('.brand__show-hide');
-const hiddenCards = document.querySelectorAll('.hidden-card');
+let isExpanded = false
 
-button.addEventListener('click', () => {
-    hiddenCards.forEach(card => {
-        if (card.style.display === 'none' || card.style.display === '') {
-            card.style.display = 'block'; 
-        } else {
-            card.style.display = 'none'; 
-        }
-    });
+toggleButton.addEventListener("click", () => {
+  isExpanded = !isExpanded
+  if (isExpanded) {
+    hiddenCards.forEach((card) => {
+      card.style.display = "flex"
+    })
+    toggleButton.textContent = "Скрыть"
+  } else {
+    hiddenCards.forEach((card) => {
+      card.style.display = "none"
+    })
+    toggleButton.textContent = "Показать все"
+  }
+})
 
-    if (button.textContent === 'Показать все') {
-        button.textContent = 'Скрыть';
+const asideMenu = document.getElementById("myAside")
+
+if (asideMenu) {
+  function checkWindowSize() {
+    if (window.innerWidth >= 1120) {
+      asideMenu.style.display = "grid"
     } else {
-        button.textContent = 'Показать все';
+      asideMenu.style.display = "none"
     }
-});
+  }
+
+  checkWindowSize()
+  window.addEventListener("resize", checkWindowSize)
+} else {
+  console.error("Элемент с id 'myAside' не найден на странице.")
+}
